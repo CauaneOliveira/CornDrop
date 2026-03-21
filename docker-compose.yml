@@ -3,7 +3,7 @@ version: '3.8'
 services:
   postgres:
     image: postgres:15
-    container_name: corndrop-db
+    container_name: corndrop_db
     restart: always
     env_file:
       - .env
@@ -15,7 +15,7 @@ services:
 
   backend:
     build: ./backend
-    container_name: corndrop-api
+    container_name: corndrop_backend
     ports:
       - "8080:8080"
     depends_on:
