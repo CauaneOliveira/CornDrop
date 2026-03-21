@@ -35,9 +35,8 @@ corndrop/
 
 Antes de começar, você precisa ter instalado:
 
-* Docker
-* Java 17
-* Maven
+* [Docker](https://docs.docker.com/desktop/setup/install/windows-install/)
+* [Java 17](https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html)
 
 ---
 
