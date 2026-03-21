@@ -76,7 +76,6 @@ Este projeto foi desenvolvido para demonstrar:
 A documentação completa do projeto está disponível na Wiki.
 
 Configuração do Ambiente:
-- [Configuração do Ambiente](./Configuracao-do-Ambiente)
-- [Teste no Banco de Dados](./Teste-Banco-de-Dados)
-
+- [Configuração do Ambiente](./Configuração-do-Ambiente)
+- [Teste no Banco de Dados](./Testes-Banco-de-Dados)
 
