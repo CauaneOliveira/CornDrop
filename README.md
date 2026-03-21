@@ -4,7 +4,7 @@ Sistema de gestão agrícola para cadastro de milho e controle de rotinas, desen
 
 ---
 
-# 🚀 Visão Geral
+# Visão Geral
 
 Este projeto simula um ambiente real de empresa, utilizando:
 
@@ -15,10 +15,10 @@ Este projeto simula um ambiente real de empresa, utilizando:
 
 ---
 
-# 📦 Estrutura do Projeto
+# Estrutura do Projeto
 
 ```
-corndrop-system/
+corndrop/
 ├── docker-compose.yml
 ├── .env.example
 ├── db/
@@ -31,17 +31,16 @@ corndrop-system/
 
 ---
 
-# ⚙️ Pré-requisitos
+# Pré-requisitos
 
 Antes de começar, você precisa ter instalado:
 
-* Docker
-* Java 17
-* Maven
+* [Docker](https://docs.docker.com/desktop/setup/install/windows-install/)
+* [Java 17](https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html)
 
 ---
 
-# 🌐 Acessos
+# Acessos
 
 Após subir o projeto:
 
@@ -50,7 +49,7 @@ Após subir o projeto:
 
 ---
 
-# 🧱 Próximos passos
+# Próximos passos
 
 * Criar entidades (Milho e Rotina)
 * Criar endpoints REST
@@ -60,7 +59,7 @@ Após subir o projeto:
 
 ---
 
-# 💼 Objetivo do projeto
+# Objetivo do projeto
 
 Este projeto foi desenvolvido para demonstrar:
 
@@ -71,6 +70,11 @@ Este projeto foi desenvolvido para demonstrar:
 
 ---
 
-## 📚 Documentação
+## Documentação
 
 A documentação completa do projeto está disponível na Wiki.
+
+Configuração do Ambiente:
+- [Configuração do Ambiente](./Configuração-do-Ambiente)
+- [Teste no Banco de Dados](./Testes-Banco-de-Dados)
+
