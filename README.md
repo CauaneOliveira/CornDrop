@@ -124,4 +124,3 @@ Configuração do Ambiente:
 ## → Backlog (Epics & User Stories)
 
 Backlog estruturado com épicos e histórias de usuário (Notion)
-* 
