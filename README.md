@@ -1,6 +1,6 @@
 # CornDrop — Sistema Inteligente de Alimentação para Galinhas
 
-## → Sobre o projeto
+## Sobre o projeto
 
 O CornDrop é um sistema automatizado de alimentação para galinhas, desenvolvido para facilitar a rotina de pequenos produtores rurais. O dispositivo permite programar a liberação de milho de forma automática por meio de uma aplicação, garantindo praticidade, controle e eficiência no manejo alimentar.
 
@@ -32,22 +32,7 @@ O CornDrop resolve esses problemas automatizando o processo e permitindo control
 
 ---
 
-## → Funcionalidades principais
-
-* Programação de horários de alimentação
-* Liberação automática de milho
-* Monitoramento do nível de alimento
-* Controle remoto via aplicativo
-
----
-
-## → Escopo
-
-Em desenvolvimento....
-
----
-
-## → Arquitetura do sistema
+## Arquitetura do Sistema
 
 ### Back-end
 
@@ -59,7 +44,7 @@ Em desenvolvimento....
 
 ### Front-end
 
-* Em definição
+* React
 
 ### Hardware
 
@@ -99,28 +84,29 @@ Após subir o projeto:
 
 ---
 
-## → Critérios de Aceitação
+## Escopo
 
-* O sistema deve realizar a liberação automática de milho nos horários configurados pelo usuário.
-* A liberação de milho só deve ocorrer caso haja estoque disponível no dispositivo.
-* O sistema deve seguir corretamente a rotina de alimentação definida pelo usuário.
-* O usuário deve conseguir visualizar e acompanhar o nível de milho pelo aplicativo.
-* O sistema deve notificar o usuário quando o nível de milho estiver baixo.
-* O dispositivo deve continuar executando as rotinas programadas mesmo sem interação do usuário.
+Encontra em desenvolvimento....
+
+* | Escopo Wiki | [Escopo](https://github.com/CauaneOliveira/CornDrop/wiki/1.-Escopo)
+
+* | Escopo Word | [CornDrop_Documentacao_Escopo.docx](https://github.com/user-attachments/files/27093076/CornDrop_Documentacao_Escopo.docx)
+
+* | Escopo PDF | [CornDrop_Documentacao_Escopo.pdf](https://github.com/user-attachments/files/27093081/CornDrop_Documentacao_Escopo.pdf)
 
 
----
+### Backlog (Epics)
 
-## → Estrutura da documentação
+Backlog estruturado com épicos e histórias de usuário (Notion)
+
+* 
+
+### Estrutura da documentação
 
 A documentação completa do projeto está disponível no Wiki do repositório.
 
 Configuração do Ambiente:
-- [Configuração do Ambiente](./Configuração-do-Ambiente)
-- [Teste no Banco de Dados](./Testes-Banco-de-Dados).
-
----
-
-## → Backlog (Epics & User Stories)
-
-Backlog estruturado com épicos e histórias de usuário (Notion)
+- [Home](https://github.com/CauaneOliveira/CornDrop/wiki)
+- [Escopo](https://github.com/CauaneOliveira/CornDrop/wiki/1.-Escopo)
+- [Configuração do Ambiente](https://github.com/CauaneOliveira/CornDrop/wiki/Configuração-do-Ambiente)
+- [Banco de Dados](https://github.com/CauaneOliveira/CornDrop/wiki/Banco-de-Dados)
