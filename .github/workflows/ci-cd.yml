@@ -85,12 +85,13 @@ jobs:
           - name: Checkout
             uses: actions/checkout@v4
 
-          - name: Validar versão
+          - name: Definir versão
             run: |
-              if [ -z "${{ github.event.release.tag_name }}" ]; then
-                echo "Erro: VERSION vazia"
-                exit 1
+              VERSION=${{ github.event.release.tag_name }}
+              if [ -z "$VERSION" ]; then
+                VERSION=$(git rev-parse --short HEAD)
               fi
+              echo "VERSION=$VERSION" >> $GITHUB_ENV
 
           - name: Login Docker Hub
             run: echo "${{ secrets.DOCKER_PASSWORD }}" | docker login -u "${{ secrets.DOCKER_USER }}" --password-stdin
@@ -101,3 +102,5 @@ jobs:
               echo "Versão: $VERSION"
               docker build -t ${{ secrets.DOCKER_USER }}/corndrop-backend:$VERSION ./backend
               docker push ${{ secrets.DOCKER_USER }}/corndrop-backend:$VERSION
+
+          
