@@ -82,14 +82,22 @@ jobs:
     if: always()
 
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+          - name: Checkout
+            uses: actions/checkout@v4
 
-      - name: Login Docker Hub
-        run: echo "${{ secrets.DOCKER_PASSWORD }}" | docker login -u "${{ secrets.DOCKER_USER }}" --password-stdin
+          - name: Validar versão
+            run: |
+              if [ -z "${{ github.event.release.tag_name }}" ]; then
+                echo "Erro: VERSION vazia"
+                exit 1
+              fi
 
-      - name: Build e push versão
-        run: |
-          VERSION=${{ github.event.release.tag_name }}
-          docker build -t ${{ secrets.DOCKER_USER }}/corndrop-backend:$VERSION ./backend
-          docker push ${{ secrets.DOCKER_USER }}/corndrop-backend:$VERSION
+          - name: Login Docker Hub
+            run: echo "${{ secrets.DOCKER_PASSWORD }}" | docker login -u "${{ secrets.DOCKER_USER }}" --password-stdin
+
+          - name: Build e push versão
+            run: |
+              VERSION=${{ github.event.release.tag_name }}
+              echo "Versão: $VERSION"
+              docker build -t ${{ secrets.DOCKER_USER }}/corndrop-backend:$VERSION ./backend
+              docker push ${{ secrets.DOCKER_USER }}/corndrop-backend:$VERSION
