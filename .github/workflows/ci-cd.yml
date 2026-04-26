@@ -41,6 +41,7 @@ jobs:
 
       - name: Build + Testes
         run: mvn clean verify
+        working-directory: backend
 
 # =========================
 # CD - BUILD + PUSH
