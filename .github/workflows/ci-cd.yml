@@ -79,7 +79,7 @@ jobs:
   release:
     runs-on: ubuntu-latest
     needs: ci
-    if: always()
+    if: github.event.release.tag_name != ''
 
     steps:
           - name: Checkout
@@ -87,10 +87,13 @@ jobs:
 
           - name: Definir versão
             run: |
-              VERSION=${{ github.event.release.tag_name }}
+              VERSION="${{ github.event.release.tag_name }}"
+              
               if [ -z "$VERSION" ]; then
-                VERSION=$(git rev-parse --short HEAD)
+                echo "Erro: tag da release não encontrada"
+                exit 1
               fi
+
               echo "VERSION=$VERSION" >> $GITHUB_ENV
 
           - name: Login Docker Hub
@@ -98,7 +101,6 @@ jobs:
 
           - name: Build e push versão
             run: |
-              VERSION=${{ github.event.release.tag_name }}
               echo "Versão: $VERSION"
               docker build -t ${{ secrets.DOCKER_USER }}/corndrop-backend:$VERSION ./backend
               docker push ${{ secrets.DOCKER_USER }}/corndrop-backend:$VERSION
