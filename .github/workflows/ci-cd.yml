@@ -9,7 +9,7 @@ on:
 jobs:
 
 # =========================
-# CI - TESTES
+# CI - TESTE 
 # =========================
   ci:
     runs-on: ubuntu-latest
