@@ -90,9 +90,9 @@ Encontra em desenvolvimento....
 
 * | Escopo Wiki | [Escopo](https://github.com/CauaneOliveira/CornDrop/wiki/1.-Escopo)
 
-* | Escopo Word | [CornDrop_Documentacao_Escopo.docx](https://github.com/user-attachments/files/27093076/CornDrop_Documentacao_Escopo.docx)
+* | Escopo Word | [CornDrop_Documentacao_Escopo.docx](https://github.com/CauaneOliveira/CornDrop/blob/main/doc/CornDrop_Documentacao_Escopo.docx)
 
-* | Escopo PDF | [CornDrop_Documentacao_Escopo.pdf](https://github.com/user-attachments/files/27093081/CornDrop_Documentacao_Escopo.pdf)
+* | Escopo PDF | [CornDrop_Documentacao_Escopo.pdf](https://github.com/CauaneOliveira/CornDrop/blob/main/doc/CornDrop_Documentacao_Escopo.pdf)
 
 
 ### Backlog (Epics)
