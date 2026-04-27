@@ -2,12 +2,6 @@
     <img width="260" height="80" alt="corndrop-logo-claro" src="https://github.com/user-attachments/assets/5286aef3-10e6-4cd6-adcf-661b04e7428a" />
 </p>
 
-
-
-
-
-
-
 # CornDrop — Sistema Inteligente de Alimentação para Galinhas
 
 ## Sobre o projeto
@@ -109,7 +103,7 @@ Encontra em desenvolvimento....
 
 Backlog estruturado com épicos e histórias de usuário (Notion)
 
-* 
+* | Backlog | [Acessar a Pagina do Notion](https://www.notion.so/CornDrop-Backlog-7c57befc97a6407685b7690075649b8c?source=copy_link)
 
 ### Estrutura da documentação
 
