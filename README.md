@@ -1,3 +1,7 @@
+<p align="center">
+    <img width="100" height="100" alt="corndrop-icone" src="https://github.com/user-attachments/assets/d499bb84-c45e-4b42-99e8-9378a733f823" />
+</p>
+
 # CornDrop — Sistema Inteligente de Alimentação para Galinhas
 
 ## Sobre o projeto
