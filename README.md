@@ -90,20 +90,11 @@ Após subir o projeto:
 
 ## Escopo
 
-Encontra em desenvolvimento....
-
 * | Escopo Wiki | [Escopo](https://github.com/CauaneOliveira/CornDrop/wiki/1.-Escopo)
 
 * | Escopo Word | [CornDrop_Documentacao_Escopo.docx](https://github.com/CauaneOliveira/CornDrop/blob/main/doc/CornDrop_Documentacao_Escopo.docx)
 
 * | Escopo PDF | [CornDrop_Documentacao_Escopo.pdf](https://github.com/CauaneOliveira/CornDrop/blob/main/doc/CornDrop_Documentacao_Escopo.pdf)
-
-
-### Backlog (Epics)
-
-Backlog estruturado com épicos e histórias de usuário (Notion)
-
-* | Backlog | [Acessar a Pagina do Notion](https://www.notion.so/CornDrop-Backlog-7c57befc97a6407685b7690075649b8c?source=copy_link)
 
 ### Estrutura da documentação
 
