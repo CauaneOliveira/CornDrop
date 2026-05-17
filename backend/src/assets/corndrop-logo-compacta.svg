@@ -1,0 +1,14 @@
+<svg width="200" height="54" viewBox="0 0 200 54" xmlns="http://www.w3.org/2000/svg">
+  <path d="M27 5 C27 5 12 22 12 33 C12 42 19 49 27 49 C35 49 42 42 42 33 C42 22 27 5 27 5Z" fill="#1A3D26"/>
+  <ellipse cx="24" cy="25" rx="3.5" ry="4.5" fill="#F5C842"/>
+  <ellipse cx="31" cy="25" rx="3.5" ry="4.5" fill="#FAD860"/>
+  <ellipse cx="21" cy="34" rx="3.5" ry="4.5" fill="#F0B830"/>
+  <ellipse cx="27.5" cy="34" rx="3.5" ry="4.5" fill="#F5C842"/>
+  <ellipse cx="34" cy="34" rx="3.5" ry="4.5" fill="#F0B830"/>
+  <ellipse cx="24" cy="42" rx="3" ry="3.5" fill="#E8A820"/>
+  <ellipse cx="31" cy="42" rx="3" ry="3.5" fill="#F5C842"/>
+  <circle cx="27" cy="6" r="2.5" fill="#1A3D26"/>
+  <path d="M27 4 C27 4 32 0 36 2 C36 2 32 3 27 4Z" fill="#2D6A3F"/>
+  <text x="52" y="32" font-family="sans-serif" font-size="22" font-weight="500" fill="#1A3D26" letter-spacing="-0.5">Corn</text>
+  <text x="106" y="32" font-family="sans-serif" font-size="22" font-weight="400" fill="#2D6A3F" letter-spacing="-0.5">Drop</text>
+</svg>
