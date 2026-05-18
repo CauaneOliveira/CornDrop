@@ -1,3 +1,7 @@
+<p align="center">
+    <img width="260" height="80" alt="corndrop-logo-claro" src="https://github.com/user-attachments/assets/5286aef3-10e6-4cd6-adcf-661b04e7428a" />
+</p>
+
 # CornDrop — Sistema Inteligente de Alimentação para Galinhas
 
 ## Sobre o projeto
@@ -86,20 +90,11 @@ Após subir o projeto:
 
 ## Escopo
 
-Encontra em desenvolvimento....
-
 * | Escopo Wiki | [Escopo](https://github.com/CauaneOliveira/CornDrop/wiki/1.-Escopo)
 
 * | Escopo Word | [CornDrop_Documentacao_Escopo.docx](https://github.com/CauaneOliveira/CornDrop/blob/main/doc/CornDrop_Documentacao_Escopo.docx)
 
 * | Escopo PDF | [CornDrop_Documentacao_Escopo.pdf](https://github.com/CauaneOliveira/CornDrop/blob/main/doc/CornDrop_Documentacao_Escopo.pdf)
-
-
-### Backlog (Epics)
-
-Backlog estruturado com épicos e histórias de usuário (Notion)
-
-* 
 
 ### Estrutura da documentação
 
