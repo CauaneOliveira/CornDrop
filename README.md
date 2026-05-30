@@ -92,9 +92,9 @@ Após subir o projeto:
 
 * | Escopo Wiki | [Escopo](https://github.com/CauaneOliveira/CornDrop/wiki/1.-Escopo)
 
-* | Escopo Word | [CornDrop_Documentacao_Escopo.docx](https://github.com/CauaneOliveira/CornDrop/blob/main/doc/CornDrop_Documentacao_Escopo.docx)
+* | Escopo | [CornDrop_Documentacao_Escopo.pdf](https://github.com/CauaneOliveira/CornDrop/blob/main/doc/CornDrop_Documentacao_Escopo.pdf)
 
-* | Escopo PDF | [CornDrop_Documentacao_Escopo.pdf](https://github.com/CauaneOliveira/CornDrop/blob/main/doc/CornDrop_Documentacao_Escopo.pdf)
+* | Backlog | [Backlog_CornDrop.pdf](https://github.com/CauaneOliveira/CornDrop/blob/main/doc/Backlog_CornDrop.pdf)
 
 ### Estrutura da documentação
 
