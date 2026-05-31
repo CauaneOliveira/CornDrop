@@ -96,6 +96,8 @@ Após subir o projeto:
 
 * | Backlog | [Backlog_CornDrop.pdf](https://github.com/CauaneOliveira/CornDrop/blob/main/doc/Backlog_CornDrop.pdf)
 
+* | Backlog | [Backlog GitHub](https://github.com/users/CauaneOliveira/projects/8)
+
 ### Estrutura da documentação
 
 A documentação completa do projeto está disponível no Wiki do repositório.
