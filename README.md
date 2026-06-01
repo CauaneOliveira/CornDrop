@@ -102,8 +102,14 @@ Após subir o projeto:
 
 A documentação completa do projeto está disponível no Wiki do repositório.
 
-Configuração do Ambiente:
 - [Home](https://github.com/CauaneOliveira/CornDrop/wiki)
 - [Escopo](https://github.com/CauaneOliveira/CornDrop/wiki/1.-Escopo)
-- [Configuração do Ambiente](https://github.com/CauaneOliveira/CornDrop/wiki/Configuração-do-Ambiente)
-- [Banco de Dados](https://github.com/CauaneOliveira/CornDrop/wiki/Banco-de-Dados)
+- [Estrutura do Backlog](https://github.com/CauaneOliveira/CornDrop/wiki/2.-Estrutura-do-Backlog)
+  - [Backlog do Produto](https://github.com/CauaneOliveira/CornDrop/wiki/2.1.-Backlog-do-Produto)
+- [Análise de Requisitos](https://github.com/CauaneOliveira/CornDrop/wiki/3.-Análise-de-Requisitos)
+- [Protótipos](https://github.com/CauaneOliveira/CornDrop/wiki/4.-Protótipos)
+- [Arquitetura](https://github.com/CauaneOliveira/CornDrop/wiki/5.-Arquitetura)
+  - [Banco de Dados](https://github.com/CauaneOliveira/CornDrop/wiki/5.1.-Banco-de-Dados)
+- [Desenvolvimento](https://github.com/CauaneOliveira/CornDrop/wiki/6.-Desenvolvimento)
+  - [Configuração do Ambiente](https://github.com/CauaneOliveira/CornDrop/wiki/6.1.-Configuração-do-Ambiente)
+  - [Fluxo de Merge Request (MR)](https://github.com/CauaneOliveira/CornDrop/wiki/6.2.-Fluxo-de-Merge-Request-(MR))
