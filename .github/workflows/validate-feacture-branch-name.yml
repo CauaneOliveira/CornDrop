@@ -1,27 +1,28 @@
-name: Validate Branch Name
+name: Validate Feature Branch Name
 
 on:
   pull_request:
-    types: [opened, synchronize, reopened]
+    branches:
+      - 'feature/**'
 
 jobs:
   validate-branch:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Validate branch name
+      - name: Validate Feature Branch Name
         run: |
           BRANCH_NAME="${{ github.head_ref }}"
 
           echo "Validando branch: $BRANCH_NAME"
 
-          if [[ ! "$BRANCH_NAME" =~ ^(feat|fix|docs|refactor|test|chore)\/[0-9]+\/HU-[0-9]+\/[a-z0-9-]+$ ]]; then
+          if [[ ! "$BRANCH_NAME" =~ ^(feat|fix|docs|refactor|test|chore)\/HU-[0-9]+\/[0-9]+\/[a-z0-9-]+$ ]]; then
             echo "Nome de branch inválido!"
             echo ""
             echo "Padrão esperado:"
-            echo "feat/09/HU-21/cadastro-usuario"
-            echo "fix/20/HU-35-correcao-login"
-            echo "doc/56/HU-40-atualizacao-wiki"
+            echo "feat/HU-21/09/cadastro-usuario"
+            echo "fix/HU-35/20/correcao-login"
+            echo "doc/HU-40/56/atualizacao-wiki"
             exit 1
           fi
 
