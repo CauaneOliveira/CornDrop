@@ -12,7 +12,8 @@ services:
       - ./db:/docker-entrypoint-initdb.d
 
   backend:
-    build: ./backend
+    build:
+      context: ./backend
     container_name: corndrop_backend
     ports:
       - "8080:8080"
@@ -20,6 +21,18 @@ services:
       - postgres
     env_file:
       - .env
+
+  frontend:
+    build:
+      context: ./frontend
+    container_name: corndrop_frontend
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
+    depends_on:
+      - backend
 
 volumes:
   postgres_data:

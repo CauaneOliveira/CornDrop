@@ -28,32 +28,37 @@ public class UserController {
     public ResponseEntity<CreateAccountResponse> createAccount(@RequestBody CreateAccountRequest request) {
         if (request.getName() == null || request.getName().trim().isEmpty()) {
             return ResponseEntity.badRequest()
-                .body(new CreateAccountResponse(false, "Name is required"));
+                .body(new CreateAccountResponse(false, "Nome é obrigatório"));
         }
 
         if (request.getEmail() == null || request.getEmail().trim().isEmpty()) {
             return ResponseEntity.badRequest()
-                .body(new CreateAccountResponse(false, "Email is required"));
+                .body(new CreateAccountResponse(false, "E-mail é obrigatório"));
         }
 
         if (!request.getEmail().contains("@") || !request.getEmail().contains(".")) {
             return ResponseEntity.badRequest()
-                .body(new CreateAccountResponse(false, "Invalid email format"));
+                .body(new CreateAccountResponse(false, "Formato de e-mail inválido"));
         }
 
         if (request.getPassword() == null || request.getPassword().trim().isEmpty()) {
             return ResponseEntity.badRequest()
-                .body(new CreateAccountResponse(false, "Password is required"));
+                .body(new CreateAccountResponse(false, "Senha é obrigatória"));
         }
 
         if (request.getPassword().length() < 6) {
             return ResponseEntity.badRequest()
-                .body(new CreateAccountResponse(false, "Password must be at least 6 characters"));
+                .body(new CreateAccountResponse(false, "Senha deve ter pelo menos 6 caracteres"));
+        }
+
+        if (!request.getPassword().matches(".*[A-Za-z].*") || !request.getPassword().matches(".*\\d.*")) {
+            return ResponseEntity.badRequest()
+                .body(new CreateAccountResponse(false, "Senha deve conter pelo menos uma letra e um número"));
         }
 
         if (userRepository.findByEmail(request.getEmail()).isPresent()) {
             return ResponseEntity.badRequest()
-                .body(new CreateAccountResponse(false, "Email already registered"));
+                .body(new CreateAccountResponse(false, "Email Já Registrado"));
         }
 
         String passwordHash = hashPassword(request.getPassword());
@@ -61,7 +66,7 @@ public class UserController {
         User savedUser = userRepository.save(newUser);
 
         return ResponseEntity.status(HttpStatus.CREATED)
-            .body(new CreateAccountResponse(true, "Account created successfully", savedUser.getId()));
+            .body(new CreateAccountResponse(true, "Conta criada com sucesso", savedUser.getId()));
     }
 
     private String hashPassword(String password) {
