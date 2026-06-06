@@ -22,6 +22,10 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://www.m....xsd">
 <groupId>org.postgresql</groupId>
 <artifactId>postgresql</artifactId>
 </dependency>
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-mail</artifactId>
+</dependency>
 </dependencies>
 <build>
 <plugins>

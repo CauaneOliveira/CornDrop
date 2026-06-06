@@ -47,12 +47,19 @@ export default function RegisterPage() {
   if (success) {
     return (
       <div className="min-h-screen bg-gray-100 flex items-center justify-center p-4">
-        <div className="bg-white rounded-lg shadow-lg p-8 text-center max-w-md">
-          <div className="text-green-600 text-5xl mb-4">✓</div>
+        <div className="bg-white rounded-2xl shadow-lg p-10 text-center max-w-md">
+          <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <svg className="w-8 h-8 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+            </svg>
+          </div>
           <h1 className="text-2xl font-bold text-gray-800 mb-2">Conta Criada com Sucesso!</h1>
-          <p className="text-gray-600 mb-6">Sua conta foi criada. Você pode fazer login agora.</p>
+          <p className="text-gray-500 text-sm mb-2">
+            Enviamos um e-mail de boas-vindas para você. Verifique sua caixa de entrada.
+          </p>
+          <p className="text-gray-400 text-xs mb-6">(Confira também a pasta de spam caso não encontre)</p>
           <a href="/login" className="text-primary-dark hover:underline font-semibold">
-            Ir para Login
+            Ir para Login →
           </a>
         </div>
       </div>
