@@ -16,6 +16,7 @@ import com.example.corndrop.dto.CreateAccountRequest;
 import com.example.corndrop.dto.CreateAccountResponse;
 import com.example.corndrop.model.User;
 import com.example.corndrop.repository.UserRepository;
+import com.example.corndrop.service.EmailService;
 
 @RestController
 @RequestMapping("/api/users")
@@ -23,6 +24,9 @@ public class UserController {
 
     @Autowired
     private UserRepository userRepository;
+
+    @Autowired
+    private EmailService emailService;
 
     @PostMapping("/register")
     public ResponseEntity<CreateAccountResponse> createAccount(@RequestBody CreateAccountRequest request) {
@@ -64,6 +68,8 @@ public class UserController {
         String passwordHash = hashPassword(request.getPassword());
         User newUser = new User(request.getName(), request.getEmail(), passwordHash);
         User savedUser = userRepository.save(newUser);
+
+        emailService.sendWelcomeEmail(savedUser.getEmail(), savedUser.getName());
 
         return ResponseEntity.status(HttpStatus.CREATED)
             .body(new CreateAccountResponse(true, "Conta criada com sucesso", savedUser.getId()));
