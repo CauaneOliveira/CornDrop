@@ -116,7 +116,7 @@ public class EmailService {
                                                    font-size:24px;
                                                    font-weight:700;
                                                    color:#1a1a1a;">
-                                            Olá, %s!
+                                            Olá, %s! 🖐️
                                         </h2>
 
                                         <p style="margin:0 0 20px;
@@ -145,7 +145,7 @@ public class EmailService {
                                             <tr>
                                                 <td style="background-color:#1A3D26;
                                                            border-radius:8px;">
-                                                    <a href="http://localhost:3000/login"
+                                                    <a href="http://localhost:3000/"
                                                        style="display:inline-block;
                                                               padding:14px 32px;
                                                               color:#ffffff;
