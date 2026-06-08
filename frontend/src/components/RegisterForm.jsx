@@ -187,7 +187,7 @@ export default function RegisterForm({
             {/* Link para Login */}
             <p className="text-center text-gray-600 text-sm mt-6">
               Já possui uma conta?{' '}
-              <a href="/login" className="text-primary-dark font-semibold hover:underline">
+              <a href="/" className="text-primary-dark font-semibold hover:underline">
                 Fazer Login
               </a>
             </p>
