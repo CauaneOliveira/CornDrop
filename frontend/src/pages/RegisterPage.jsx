@@ -58,7 +58,7 @@ export default function RegisterPage() {
             Enviamos um e-mail de boas-vindas para você. Verifique sua caixa de entrada.
           </p>
           <p className="text-gray-400 text-xs mb-6">(Confira também a pasta de spam caso não encontre)</p>
-          <a href="/login" className="text-primary-dark hover:underline font-semibold">
+          <a href="/" className="text-primary-dark hover:underline font-semibold">
             Ir para Login →
           </a>
         </div>
